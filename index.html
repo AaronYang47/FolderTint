@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Color Changer - macOS Folder Customization Tool</title>
+    <style>
+        :root {
+            --primary-color: #2d5a9e;
+            --secondary-color: #f5f5f7;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .color-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .color-category {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Folder Color Changer</h1>
+            <p>Advanced macOS Folder Customization Tool</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Overview</h2>
+            <p>Folder Color Changer is a sophisticated macOS application that allows users to customize folder icons with a wide range of colors. Built with SwiftUI, it offers an intuitive and modern interface for personalizing folder appearances while maintaining the native macOS look and feel.</p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Multi-Language Support</h3>
+                    <ul>
+                        <li>15 languages supported</li>
+                        <li>Dynamic language switching</li>
+                        <li>Real-time interface updates</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Color Selection</h3>
+                    <ul>
+                        <li>13 curated color categories</li>
+                        <li>100+ preset colors</li>
+                        <li>Custom color support</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Smart Naming System</h3>
+                    <ul>
+                        <li>Automatic color name appending</li>
+                        <li>Duplicate handling</li>
+                        <li>Original name preservation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Color Categories</h2>
+            <div class="color-categories">
+                <div class="color-category">
+                    <h3>Basic Colors</h3>
+                    <p>Red, Blue, Green, Yellow, Purple, Orange</p>
+                </div>
+                <div class="color-category">
+                    <h3>Metallic Colors</h3>
+                    <p>Silver, Gold, Bronze, Copper, Platinum, Steel, Chrome, Titanium</p>
+                </div>
+                <div class="color-category">
+                    <h3>Gem Colors</h3>
+                    <p>Ruby, Sapphire, Emerald, Amethyst, Topaz, Opal, Pearl, Garnet</p>
+                </div>
+                <div class="color-category">
+                    <h3>Neon Colors</h3>
+                    <p>Pink, Blue, Green, Yellow, Orange, Purple, Cyan, Red</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Details</h2>
+            <ul>
+                <li>Built with SwiftUI and AppKit integration</li>
+                <li>Uses Core Image for color processing</li>
+                <li>Implements NSWorkspace for icon manipulation</li>
+                <li>Efficient memory management</li>
+                <li>Asynchronous operations for smooth performance</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>System Requirements</h2>
+            <ul>
+                <li>macOS operating system</li>
+                <li>Sufficient disk space for folder duplication</li>
+                <li>Support for modern color processing</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Folder Color Changer. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
