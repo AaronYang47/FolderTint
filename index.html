@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folder Color Changer - macOS Folder Customization Tool</title>
+    <title>Folder Tint - macOS Folder Customization Tool</title>
     <style>
         :root {
             --primary-color: #2d5a9e;
@@ -89,6 +89,32 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
+        .support-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .contact-info {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: white;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -96,12 +122,44 @@
             background-color: var(--primary-color);
             color: white;
         }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .support-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .faq-item, .troubleshooting-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-item h4, .troubleshooting-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .support-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .support-card a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Folder Color Changer</h1>
+            <h1>Folder Tint</h1>
             <p>Advanced macOS Folder Customization Tool</p>
         </div>
     </header>
@@ -109,7 +167,7 @@
     <main class="container">
         <section>
             <h2>Overview</h2>
-            <p>Folder Color Changer is a sophisticated macOS application that allows users to customize folder icons with a wide range of colors. Built with SwiftUI, it offers an intuitive and modern interface for personalizing folder appearances while maintaining the native macOS look and feel.</p>
+            <p>Folder Tint is a sophisticated macOS application that allows users to customize folder icons with a wide range of colors. Built with SwiftUI, it offers an intuitive and modern interface for personalizing folder appearances while maintaining the native macOS look and feel.</p>
         </section>
 
         <section>
@@ -185,11 +243,47 @@
                 <li>Support for modern color processing</li>
             </ul>
         </section>
+
+        <section class="support-section">
+            <h2>Support</h2>
+            <p>We're here to help you get the most out of Folder Tint. If you have any questions, encounter issues, or need assistance, please don't hesitate to reach out.</p>
+            
+            <h3>How to Get Support</h3>
+            <ul>
+                <li>Email support: For direct assistance, please contact us at <a href="mailto:aaronyang470128@hotmail.com">aaronyang470128@hotmail.com</a></li>
+                <li>Response Time: We typically respond within 24-48 hours</li>
+                <li>Languages: Support available in English and Chinese</li>
+            </ul>
+
+            <h3>Common Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Which macOS versions are supported?</h4>
+                    <p>Folder Tint supports macOS Monterey (12.0) and later versions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is it safe to use Folder Tint?</h4>
+                    <p>Yes, Folder Tint is completely safe to use. It creates copies of your folders and never modifies the original folders.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Will coloring folders affect their contents?</h4>
+                    <p>No, Folder Tint only changes the folder icon appearance. The contents of your folders remain completely unchanged.</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:aaronyang470128@hotmail.com">aaronyang470128@hotmail.com</a></p>
+                <p>Developer: Aaron Yang</p>
+                <p>Response Time: Within 24-48 hours</p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2024 Folder Color Changer. All rights reserved.</p>
+            <p>© 2024 Folder Tint. All rights reserved.</p>
+            <p>Developer: Aaron Yang | Contact: <a href="mailto:aaronyang470128@hotmail.com">aaronyang470128@hotmail.com</a></p>
         </div>
     </footer>
 </body>
